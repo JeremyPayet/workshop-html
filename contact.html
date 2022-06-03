@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+</head>
+
+<body>
+    <form action="/send_contact" method="POST">
+        <fieldset>
+            <label for="nom_contact">Nom: </label>
+            <input type="text" name="firstname" id="nom_contact">
+        </fieldset>
+        <fieldset>
+            <label for="prenom_contact">Prénom: </label>
+            <input type="text" name="lastname" id="prenom_contact">
+        </fieldset>
+        <fieldset>
+            <label for="email_contact">Email: </label>
+            <input type="email" name="email" id="email_contact">
+        </fieldset>
+        <fieldset>
+            <label for="telephone_contact">Numéro de téléphone: </label>
+            <input type="tel" name="tel" id="telephone_contact">
+        </fieldset>
+        <fieldset>
+            <label for="message_contact">Message (optionel): </label>
+            <textarea id="message_contact" name="message"></textarea>
+        </fieldset>
+        <fieldset>
+            <!--  (liste déroulante : Email, Téléphone) -->
+            <label>Canal de contact préféré: </label>
+            <select id="prefered_contact" name="channel">
+                <option value="telephone">Téléphone</option>
+                <option value="mail">Email</option>
+            </select>
+        </fieldset>
+        
+        <button type="submit">Envoi</button>
+        <button type="reset">Reset</button>
+    </form>
+</body>
+
+</html>
