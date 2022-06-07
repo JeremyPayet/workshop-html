@@ -1,0 +1,36 @@
+.texte{
+    counter-reset: section 0 defval 0 termeval 0; 
+ }
+ .texte > li:before {
+     content: "Texte " counter(section) " ";
+     counter-increment: section;
+ }
+
+ .terme{
+    font-weight: bolder;
+}
+ul > .terme::before{
+    content: "Terme " counter(termeval) " ";
+    counter-increment: termeval;
+    
+}
+
+ .definition > li:before {
+     content: "Définition " counter(defval) " ";
+     counter-increment: defval;
+ }
+
+ .element, .message{
+    list-style-type: lower-greek; 
+    counter-reset: elementval 0 messageval 0;
+ }
+ .element > li:before {
+    content: "Element " counter(elementval) "  de la liste numérotée";
+    counter-increment: elementval;
+}
+
+.message > li:before {
+     content: "Message " counter(messageval) " ";
+     counter-increment: messageval;
+ }
+
