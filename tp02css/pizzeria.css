@@ -1,0 +1,32 @@
+body {
+  font-family: "Helvetica", "Arial";
+  background-color: #EFECCA;
+}
+h1 {
+  color: #C03000;
+}
+h2 {
+  color: #4BB5C1;
+}
+a {
+  text-decoration: none;
+}
+#navigation li {
+display: inline;
+}
+#navigation li a {
+padding: 5px 20px ;
+background: #CC0300 ;
+color: #FFFFFF ;
+border: 1px solid #660000 ;
+text-align: center ;
+text-decoration: none ;
+}
+#navigation li a:hover, #navigation li a:focus, #navigation li a:active {
+background: #009900;
+text-decoration: underline;
+}
+#contact {
+  color: #0000FF;
+  font-weight: bold;
+}
